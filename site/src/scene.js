@@ -91,7 +91,7 @@ export async function createScene(host) {
   // The same original image is used on a paper stand; no character redraw.
   let rabbitTexture;
   try {
-    rabbitTexture = await new THREE.TextureLoader().loadAsync('/assets/usagi-ninja.png');
+    rabbitTexture = await new THREE.TextureLoader().loadAsync(`${import.meta.env.BASE_URL}assets/usagi-ninja.png`);
     rabbitTexture.colorSpace = THREE.SRGBColorSpace;
     textures.add(rabbitTexture);
   } catch {

@@ -21,6 +21,15 @@ npm run preview
 
 本番相当の確認は http://127.0.0.1:5174/。配信対象は `dist/` です。
 
+GitHub Pages用のビルドをローカル確認する場合は、以下を使います。
+
+```sh
+npm run build:pages
+npm run preview -- --base=/web_usa2n/
+```
+
+確認URLは http://127.0.0.1:5174/web_usa2n/ です。通常の開発URLは変わりません。
+
 ## 構成
 
 - `index.html`: セマンティックな本文・ナビゲーション・キャラクターの案内。名前と紹介文は仮。
@@ -39,6 +48,6 @@ npm run preview
 
 ## 残りの段階
 
-2場面の動きと空気感を確認後、制作物・つながる章を追加します。実名・経歴・実績・連絡先は創作していません。Webサイト本体の外部配信は別途行います。配信時にcanonical URLとOGPの絶対URLを確定します。
+2場面の動きと空気感を確認後、制作物・つながる章を追加します。実名・経歴・実績・連絡先は創作していません。配信先は https://yu-rimasui.github.io/web_usa2n/ 。`main` へのpushでテスト・ビルド・Pages配信を自動実行します。
 
 検証の詳細は `qa/verification.md`。端末による3Dの速度差があるため、実機iOS/Safari・Androidでの最終確認は別途必要です。
