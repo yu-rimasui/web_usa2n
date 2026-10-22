@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#dfe9d8">
+    <meta name="description" content="小さな好奇心、ちょっと先の世界。うさぎ忍者と巡る、usa2nの小さな3D実験室。">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="usa2n — THE LITTLE LAB">
+    <meta property="og:description" content="技術と、ちょっとした遊び心。淡いグリーンの実験室へようこそ。">
+    <meta property="og:locale" content="ja_JP">
+    <title>usa2n — THE LITTLE LAB</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#about" data-destination="about">自己紹介へスキップ</a>
+    <header class="site-header">
+      <a class="brand" href="#hello" data-destination="hello" aria-label="usa2n 実験室の入口へ"><span class="brand-mark" aria-hidden="true">u<span>✳</span></span><span>usa2n<span class="brand-period">.</span><small>THE LITTLE LAB</small></span></a>
+      <nav aria-label="メインメニュー"><a href="#hello" data-destination="hello" aria-current="location">入口 <span>00</span></a><a href="#about" data-destination="about">この実験室のこと <span>01</span></a></nav>
+      <button class="motion-toggle" id="motion-toggle" aria-pressed="false" disabled><span class="toggle-icon" aria-hidden="true"></span><span id="motion-label">演出を減らす</span></button>
+    </header>
+    <main>
+      <div class="journey" id="journey">
+        <div class="stage">
+          <div class="canvas-host" id="canvas-host" aria-hidden="true"></div>
+          <div class="paper-grain" aria-hidden="true"></div>
+          <div class="stage-topline"><span><i></i> A PERSONAL EXPERIMENT, ALWAYS IN PROGRESS.</span><span>EST. 2026 / VOL. 001</span></div>
+          <section class="chapter intro" id="hello" aria-labelledby="intro-title">
+            <p class="eyebrow"><span>00</span> HELLO, CURIOUS WORLD.</p>
+            <h1 id="intro-title">小さな好奇心。<br><span>ちょっと先の世界。</span></h1>
+            <p class="chapter-en">A LITTLE CURIOUS.<br>A LITTLE DIFFERENT.</p>
+            <p class="chapter-description">技術と、ちょっとした遊び心。<br>ここは、わたしの小さな実験室です。</p>
+            <a class="enter-link" href="#about" data-destination="about"><span class="circle-arrow" aria-hidden="true">↘</span> スクロールして、なかへ。<span class="link-small">COME ON IN</span></a>
+          </section>
+          <section class="chapter about" id="about" aria-labelledby="about-title">
+            <p class="eyebrow"><span>01</span> TECHNOLOGY WITH A SOFT SIDE.</p>
+            <h2 id="about-title">つくるのは、<br><span>おもしろいほうへ。</span></h2>
+            <p class="chapter-en">A SOFT SPOT<br>FOR NEW IDEAS.</p>
+            <p class="chapter-description">あたらしい技術も、手描きの線も。<br>気になるものを組み合わせて、<br>ちょっといい体験を、かたちに。</p>
+            <div class="lab-values"><span><b>つくる</b>MAKE</span><span><b>ためす</b>EXPLORE</span><span><b>たのしむ</b>PLAY</span></div>
+            <p class="draft-label">紹介文は、世界観を確認するための仮テキストです。</p>
+          </section>
+          <img class="fallback-poster" src="/assets/lab-poster.svg" width="800" height="640" alt="淡い緑のレトロな端末と、小さな実験道具が並ぶ机">
+          <div class="guide" id="guide"><div class="guide-bubble"><span id="guide-message">お、いらっしゃい。</span><span class="guide-spark" aria-hidden="true">✳</span></div><a href="https://store.line.me/stickershop/product/28191966/ja" target="_blank" rel="noopener noreferrer" aria-label="うさぎ忍者のLINEスタンプを見る（新しいタブ）"><img src="/assets/usagi-ninja.png" width="110" height="110" alt="原画のうさぎ忍者。白い耳、緑の頭巾とマフラー、黒い服の手描きキャラクター"></a><p>YOUR LITTLE GUIDE<br><b>うさぎ忍者</b></p></div>
+          <div class="object-label" id="object-label" aria-hidden="true"><span>EXPERIMENT NO. 001</span><b>THE CURIOSITY MACHINE</b><span>ひらくと、なにかが始まる。</span></div>
+          <div class="transition-caption" id="transition-caption" aria-hidden="true"><span>ひらいてみよう。</span><small>A LITTLE FURTHER INSIDE.</small></div>
+          <div class="stage-footer"><div class="chapter-meter"><span id="chapter-code">00</span><div><b id="chapter-name">Hello, world.</b><span class="meter-track"><span id="meter-fill"></span></span></div><span class="meter-total">/ 01</span></div><div class="scroll-cue"><span class="scroll-track" aria-hidden="true"><i></i></span><span id="scroll-message">SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></div><span class="footer-coordinate">SOMEWHERE BETWEEN TECH & PLAY.</span></div>
+        </div>
+      </div>
+      <section class="prototype-note" aria-labelledby="prototype-title"><div><p class="eyebrow">A WORK IN PROGRESS / SCENES 00–01</p><h2 id="prototype-title">この先も、ただいま実験中。</h2><p>まずは「入口から実験室へ」の、小さな旅。<br>この空気感を育てながら、制作物や日々のことを並べていきます。</p></div><a href="#hello" data-destination="hello">入口に戻る <span aria-hidden="true">↗</span></a></section>
+    </main>
+    <footer class="site-footer"><span>© <span id="year">2026</span> usa2n</span><span>SMALL IDEAS. SOFT EDGES.</span><a href="https://store.line.me/stickershop/product/28191966/ja" target="_blank" rel="noopener noreferrer">うさぎ忍者 / LINE STICKERS ↗</a></footer>
+    <p class="runtime-status" id="runtime-status" role="status" hidden></p>
+    <noscript><p class="noscript-note">3Dの演出にはJavaScriptを使用します。紹介文とリンクは、このままお読みいただけます。</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
